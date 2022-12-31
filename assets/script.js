@@ -52,9 +52,10 @@ let losses = 0;
 let draw = 0;
 let userchoice = ""
 let computerchoice = ""
+// Will generate computer function up to the index of 2 
 let computerindex = Maths.floor(Math.random() * choices.length)
 
-
+// User can only choose a value from list in an uppercase form
 userchoice = prompt("please choose R, P, or S").toUpperCase()
 
 computerchoice = choices[computerindex]
