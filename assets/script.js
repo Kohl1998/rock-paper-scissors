@@ -50,14 +50,20 @@ let matches = 0;
 let wins = 0; 
 let losses = 0;
 let tie = 0;
+let playAgain = false;
 let userchoice = ""
 let computerchoice = ""
 // Will generate computer function up to the index of 2 
+
+function playRPS () {
 let computerindex = Math.floor(Math.random() * choices.length)
 
 // User can only choose a value from list in an uppercase form
 
 userchoice = prompt("please choose R, P, or S").toUpperCase()
+if (!['R', 'P', 'S'].includes(userchoice)) {
+    playRPS()
+}
 
 // Computer can only select option within 0-2 index
 computerchoice = choices[computerindex]
@@ -76,3 +82,13 @@ if (userchoice = computerchoice) {
     losses++;
     alert("You lose!\nWins:  " + wins + "\nLosses: " + losses + "\nTies: " + tie);
 }
+
+playAgain = confirm('Do you want to play again?');
+if (playAgain) {
+  playRPS();
+} else {
+  alert('Have a nice day!');
+  return false;
+}
+}
+playRPS();
