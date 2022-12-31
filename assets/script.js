@@ -52,3 +52,6 @@ let losses = 0;
 let draw = 0;
 let userchoice = ""
 let computerchoice = ""
+
+prompt = ("please choose R, P, or S").toUpperCase()
+
