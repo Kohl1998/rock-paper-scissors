@@ -62,20 +62,20 @@ userchoice = prompt("please choose R, P, or S").toUpperCase()
 // Computer can only select option within 0-2 index
 computerchoice = choices[computerindex]
 
-alert('Computer chose: ' + computerchoice)
+alert('Computer chose: ' + computerchoice);
 
 // Compare user and computer
 
 if (userchoice = computerchoice) {
-    matches++
-    draw++
+    matches++;
+    draw++;
     alert("\nDraw: " + draw + "\nWins: " + wins + "\nLosses: " + losses);
 } else if ((userchoice == 'R' && computerchoice == 'S') || (userchoice == 'P' && computerchoice == 'R') || (userchoice == 'S' && computerchoice == 'P')) {
-    matches++
-    wins++
+    matches++;
+    wins++;
     alert("You win!\nWins: " + wins + "\nDraws: " + draw + "\nLosses: " + losses);
 } else {
-    matches++
-    losses++
+    matches++;
+    losses++;
     alert("You lose!\nLosses:  " + losses + "\nDraws: " + "\nWins: " + wins);
 }
