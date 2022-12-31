@@ -56,9 +56,15 @@ let computerchoice = ""
 let computerindex = Maths.floor(Math.random() * choices.length)
 
 // User can only choose a value from list in an uppercase form
+
 userchoice = prompt("please choose R, P, or S").toUpperCase()
+
 
 computerchoice = choices[computerindex]
 
+// Compare user and computer
 
-
+if (userchoice = computerchoice) {
+    draw++
+    alert("It's a draw\n " + draw + "Wins:\n" + wins + "Losses:\n" + losses);
+}
