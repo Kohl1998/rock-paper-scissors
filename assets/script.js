@@ -49,7 +49,7 @@ let choices = ['R', 'P', 'S']
 let matches = 0;
 let wins = 0; 
 let losses = 0;
-let draw = 0;
+let tie = 0;
 let userchoice = ""
 let computerchoice = ""
 // Will generate computer function up to the index of 2 
@@ -67,15 +67,12 @@ alert('Computer chose: ' + computerchoice);
 // Compare user and computer
 
 if (userchoice = computerchoice) {
-    matches++;
-    draw++;
-    alert("\nDraw: " + draw + "\nWins: " + wins + "\nLosses: " + losses);
+    tie++;
+    alert("It's a draw!\nWins: " + wins + "\nLosses: " + losses + "\nTies: " + tie);
 } else if ((userchoice == 'R' && computerchoice == 'S') || (userchoice == 'P' && computerchoice == 'R') || (userchoice == 'S' && computerchoice == 'P')) {
-    matches++;
     wins++;
-    alert("You win!\nWins: " + wins + "\nDraws: " + draw + "\nLosses: " + losses);
+    alert("You win!\nWins: " + wins + "\nLosses: " + losses + "\nTies: " + tie);
 } else {
-    matches++;
     losses++;
-    alert("You lose!\nLosses:  " + losses + "\nDraws: " + "\nWins: " + wins);
+    alert("You lose!\nWins:  " + wins + "\nLosses: " + losses + "\nTies: " + tie);
 }
