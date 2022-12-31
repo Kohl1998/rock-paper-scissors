@@ -67,10 +67,15 @@ alert('Computer chose: ' + computerchoice)
 // Compare user and computer
 
 if (userchoice = computerchoice) {
+    matches++
     draw++
-    alert("It's a draw\n " + draw + "Wins:\n" + wins + "Losses:\n" + losses);
-} else if (userchoice == 'R' && computerchoice == 'S') || (userchoice == 'P' && computerchoice == 'R') || (userchoice == 'S' && computerchoice == 'P') {
+    alert("\nDraw: " + draw + "\nWins: " + wins + "\nLosses: " + losses);
+} else if ((userchoice == 'R' && computerchoice == 'S') || (userchoice == 'P' && computerchoice == 'R') || (userchoice == 'S' && computerchoice == 'P')) {
+    matches++
     wins++
-    alert("You win!\n" + wins + "Draws:" + draw + "Losses:" + losses)
+    alert("You win!\nWins: " + wins + "\nDraws: " + draw + "\nLosses: " + losses);
+} else {
+    matches++
+    losses++
+    alert("You lose!\nLosses:  " + losses + "\nDraws: " + "\nWins: " + wins);
 }
-
