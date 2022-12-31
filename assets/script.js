@@ -53,7 +53,7 @@ let draw = 0;
 let userchoice = ""
 let computerchoice = ""
 // Will generate computer function up to the index of 2 
-let computerindex = Maths.floor(Math.random() * choices.length)
+let computerindex = Math.floor(Math.random() * choices.length)
 
 // User can only choose a value from list in an uppercase form
 
