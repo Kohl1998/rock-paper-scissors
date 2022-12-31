@@ -85,10 +85,10 @@ if (userchoice === computerchoice) {
 // To see if user wants to play again
 playAgain = confirm('Do you want to play again?');
 if (playAgain) {
-  playRPS();
+    playRPS();
 } else {
-  alert('Have a nice day!');
-  return false;
+    alert('Have a nice day!');
+    return false;
 }
 }
 
