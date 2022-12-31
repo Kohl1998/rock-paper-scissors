@@ -57,3 +57,7 @@ let computerindex = Maths.floor(Math.random() * choices.length)
 
 userchoice = prompt("please choose R, P, or S").toUpperCase()
 
+computerchoice = choices[computerindex]
+
+
+
