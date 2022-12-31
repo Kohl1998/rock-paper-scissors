@@ -44,3 +44,9 @@
 // Either confirm whether to start a new round OR start a new round
 
 // After 10 rounds, alert the stats
+
+let choices = ['R', 'P', 'S'] 
+let matches = 0;
+let wins = 0; 
+let losses = 0;
+let draw = 0;
