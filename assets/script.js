@@ -53,5 +53,6 @@ let draw = 0;
 let userchoice = ""
 let computerchoice = ""
 
-prompt = ("please choose R, P, or S").toUpperCase()
+
+userchoice = prompt("please choose R, P, or S").toUpperCase()
 
