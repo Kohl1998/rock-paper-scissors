@@ -52,6 +52,7 @@ let losses = 0;
 let draw = 0;
 let userchoice = ""
 let computerchoice = ""
+let computerindex = Maths.floor(Math.random() * choices.length)
 
 
 userchoice = prompt("please choose R, P, or S").toUpperCase()
