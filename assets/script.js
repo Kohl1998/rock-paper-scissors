@@ -72,17 +72,17 @@ alert('Computer chose: ' + computerchoice);
 
 // Compare user and computer
 
-if (userchoice = computerchoice) {
+if (userchoice === computerchoice) {
     tie++;
     alert("It's a draw!\nWins: " + wins + "\nLosses: " + losses + "\nTies: " + tie);
-} else if ((userchoice == 'R' && computerchoice == 'S') || (userchoice == 'P' && computerchoice == 'R') || (userchoice == 'S' && computerchoice == 'P')) {
+} else if ((userchoice === 'R' && computerchoice === 'S') || (userchoice === 'P' && computerchoice === 'R') || (userchoice === 'S' && computerchoice === 'P')) {
     wins++;
     alert("You win!\nWins: " + wins + "\nLosses: " + losses + "\nTies: " + tie);
 } else {
     losses++;
     alert("You lose!\nWins:  " + wins + "\nLosses: " + losses + "\nTies: " + tie);
 }
-
+// To see if user wants to play again
 playAgain = confirm('Do you want to play again?');
 if (playAgain) {
   playRPS();
@@ -91,4 +91,5 @@ if (playAgain) {
   return false;
 }
 }
+
 playRPS();
