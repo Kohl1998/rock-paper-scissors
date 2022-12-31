@@ -87,7 +87,7 @@ playAgain = confirm('Do you want to play again?');
 if (playAgain) {
     playRPS();
 } else {
-    alert('Have a nice day!');
+    alert('Have a lovely day, hopefully we meet again!');
     return false;
 }
 }
