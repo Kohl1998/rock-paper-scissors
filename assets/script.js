@@ -59,6 +59,7 @@ let computerindex = Maths.floor(Math.random() * choices.length)
 
 userchoice = prompt("please choose R, P, or S").toUpperCase()
 
+// Computer can only select option within 0-2 index
 computerchoice = choices[computerindex]
 
 alert('Computer chose: ' + computerchoice)
@@ -68,4 +69,8 @@ alert('Computer chose: ' + computerchoice)
 if (userchoice = computerchoice) {
     draw++
     alert("It's a draw\n " + draw + "Wins:\n" + wins + "Losses:\n" + losses);
+} else if (userchoice == 'R' && computerchoice == 'S') || (userchoice == 'P' && computerchoice == 'R') || (userchoice == 'S' && computerchoice == 'P') {
+    wins++
+    alert("You win!\n" + wins + "Draws:" + draw + "Losses:" + losses)
 }
+
