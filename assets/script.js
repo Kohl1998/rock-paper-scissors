@@ -50,3 +50,5 @@ let matches = 0;
 let wins = 0; 
 let losses = 0;
 let draw = 0;
+let userchoice = ""
+let computerchoice = ""
