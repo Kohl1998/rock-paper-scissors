@@ -18,7 +18,9 @@ Lastly, once I was done I pushed all the updates to my remote repository from my
 
 ## Screenshot 
 
-
+[![homescreen-rps-1.png](https://i.postimg.cc/zGs95f79/homescreen-rps-1.png)](https://postimg.cc/QFq6JhRb)
+[![computer-option-2.png](https://i.postimg.cc/ZqPDSxCd/computer-option-2.png)](https://postimg.cc/rdm9GWGV)
+[![feedback-rps-3.png](https://i.postimg.cc/Y9nRrnkh/feedback-rps-3.png)](https://postimg.cc/MMBVtYnS)
 
 ## Credits
 
